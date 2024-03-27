@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema da Caixa</title>
+</head>
+<style>
+    div {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:solid 3px;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: black;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    }
+    body {
+    font-size: 30px;
+    background-image: url('https://marketplace.canva.com/EAFwThEg0sU/1/0/1600w/canva-papel-de-parede-a-arte-liberta-delicado-azul-LDSqr5i9aeI.jpg');
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   min-height: 880px;
+}
+</style>
+<body>
+<div>
+    <form action="calculo.php" method="post">
+<center>
+    <label for="nome">Nome do cliente</label>
+    <br>
+    <input type="text" name="nome" id="nome">
+    <br>
+    <label for="p1">Primeiro produto</label>
+    <br>
+    <input type="text" name="p1" id="p1">
+    <br>
+    <label for="v1">Preço</label>
+    <br>
+    <input type="number" name="v1" id="v1">
+    <br>
+    <label for="p2">Segundo produto</label>
+    <br>
+    <input type="text" name="p2" id="p2">
+    <br>
+    <label for="v2">Preço</label>
+    <br>
+    <input type="number" name="v2" id="v2">
+    <br>
+    <label for="vc">Valor pago pelo cliente</label>
+    <br>
+    <input type="number" name="vc" id="vc">
+    <br>
+    <input type="submit" value="Ver Nota">
+</center>
+    </form>
+</div>
+</body>
+</html>
